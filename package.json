@@ -1,7 +1,7 @@
 {
-  "name": "edtf",
+  "name": "browser-edtf",
   "version": "2.7.0",
-  "description": "Extended Date Time Format (EDTF) / ISO 8601-2 Parser and Library",
+  "description": "Client-side EDTF.js",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src test",
@@ -15,24 +15,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inukshuk/edtf.js.git"
+    "url": "git+https://github.com/SylvainBigonneau/browser-edtf.js.git"
   },
   "keywords": [
+    "browser",
     "edtf",
     "date",
     "time",
     "parser",
     "ISO 8601"
   ],
-  "author": "Center for History and New Media, George Mason University",
+  "author": "Sylvain Bigonneau",
   "contributors": [
-    "Sylvester Keil <sylvester@keil.or.at>"
+    "Sylvain Bigonneau <sylvain@monroe-labs.com>"
   ],
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/inukshuk/edtf.js/issues"
+    "url": "https://github.com/SylvainBigonneau/browser-edtf.js/issues"
   },
-  "homepage": "https://github.com/inukshuk/edtf.js#readme",
+  "homepage": "https://github.com/SylvainBigonneau/browser-edtf.js#readme",
   "dependencies": {
     "nearley": "^2.19.0",
     "randexp": "^0.5.3"

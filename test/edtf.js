@@ -7,9 +7,6 @@ describe('edtf', () => {
   it('is a function', () =>
     expect(edtf).to.be.a('function'))
 
-  it('returns dates by default', () =>
-    expect(edtf()).to.be.a.date.and.an.edtf)
-
   it('parses strings', () => {
     expect(edtf('2016-03')).to.be.an.edtf.and.produce([2016, 2])
 

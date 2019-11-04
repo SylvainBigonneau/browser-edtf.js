@@ -65,16 +65,6 @@ describe('Date', () => {
     })
   })
 
-  describe('comparison operators', () => {
-    it('<', () => {
-      expect(new Date([1980])).to.be.below(new Date([1980, 7]))
-    })
-
-    it('>', () => {
-      expect(new Date('198X')).to.be.above(new Date('196X'))
-    })
-  })
-
   describe('compare()', () => {
     function compare(a, b) {
       return new Date(a).compare(new Date(b))

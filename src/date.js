@@ -17,7 +17,7 @@ const X = new WeakMap()
 
 const PM = [Bitmask.YMD, Bitmask.Y, Bitmask.YM, Bitmask.YMD]
 
-class Date extends global.Date {
+class Date {
   constructor(...args) { // eslint-disable-line complexity
     let precision = 0
     let uncertain, approximate, unspecified
@@ -78,7 +78,7 @@ class Date extends global.Date {
       precision = args.length
     }
 
-    super(...args)
+    this.privDate = new global.Date(...args)
 
     this.precision = precision
 
@@ -249,6 +249,62 @@ class Date extends global.Date {
       value = PM[this.precision]
 
     return new Bitmask(value)
+  }
+
+  toISOString() {
+    return this.privDate.toISOString()
+  }
+
+  getUTCFullYear() {
+    return this.privDate.getUTCFullYear()
+  }
+
+  getUTCMonth() {
+    return this.privDate.getUTCMonth()
+  }
+
+  getUTCDate() {
+    return this.privDate.getUTCDate()
+  }
+
+  getTime() {
+    return this.privDate.getTime()
+  }
+
+  getUTCDay() {
+    return this.privDate.getUTCDay()
+  }
+
+  getUTCHours() {
+    return this.privDate.getUTCHours()
+  }
+
+  getUTCMinutes() {
+    return this.privDate.getUTCMinutes()
+  }
+
+  getUTCSeconds() {
+    return this.privDate.getUTCSeconds()
+  }
+
+  getUTCMilliseconds() {
+    return this.privDate.getUTCMilliseconds()
+  }
+
+  setUTCDate(date) {
+    return this.privDate.setUTCDate(date)
+  }
+
+  setUTCFullYear(year) {
+    return this.privDate.setUTCFullYear(year)
+  }
+
+  setUTCMonth(month) {
+    return this.privDate.setUTCMonth(month)
+  }
+
+  setDate(date) {
+    return this.privDate.setDate(date)
   }
 }
 
