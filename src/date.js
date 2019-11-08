@@ -291,6 +291,10 @@ class Date {
     return this.privDate.getUTCMilliseconds()
   }
 
+  getDate() {
+    return this.privDate.getDate()
+  }
+
   setUTCDate(date) {
     return this.privDate.setUTCDate(date)
   }
