@@ -295,6 +295,10 @@ class Date {
     return this.privDate.getDate()
   }
 
+  getTimezoneOffset() {
+    return this.privDate.getTimezoneOffset()
+  }
+
   setUTCDate(date) {
     return this.privDate.setUTCDate(date)
   }
